@@ -94,3 +94,78 @@ Installing GLPI (Gestionnaire Libre de Parc Informatique) ITSM on a Linode serve
 1. You can access GLPI by navigating to `http://your_server_ip` in your web browser.
 
 Congratulations! You've successfully installed GLPI ITSM on your Linode server. Make sure to consult GLPI's official documentation for further configuration and customization options.      
+
+
+# GLPI Web-based Installation Guide
+
+This guide provides a detailed walkthrough of the web-based installation process for GLPI, an open-source IT asset management and helpdesk system.
+
+Web-based Installation
+
+1. **Language Selection:**
+   - Access the GLPI URL in your web browser, typically `http://your_server_ip/glpi`.
+   - Choose your preferred language from the available options and click "Start installation."
+
+2. **License Agreement:**
+   - Review the GLPI license agreement.
+   - If you agree, click "Next" to proceed.
+
+3. **System Check:**
+   - GLPI will perform a system check to ensure your server meets the requirements.
+   - Address any identified issues before continuing.
+
+4. **Database Configuration:**
+   - Enter your MySQL database details:
+     - **Database server:** Usually `localhost` if the database is on the same server.
+     - **Database name:** The name of the database you created for GLPI (e.g., `glpi_db`).
+     - **Database user:** The username you created for accessing the database (e.g., `glpi_user`).
+     - **Database password:** The password associated with the database user.
+   - Click "Next" to proceed.
+
+5. **Configure GLPI:**
+   - Set up basic configuration settings:
+     - **Site name:** Enter a name for your GLPI instance.
+     - **URL:** The URL where GLPI is accessible.
+     - **Default language:** Choose the primary language for GLPI.
+   - Click "Next" to continue.
+
+6. **Administrator Account:**
+   - Create the administrator account for logging in to GLPI:
+     - **Full name:** Enter the full name of the administrator.
+     - **Login:** Choose a username for the administrator.
+     - **Password:** Set a strong password for the administrator account.
+     - **Confirm password:** Re-enter the password for confirmation.
+   - Click "Next" to proceed.
+
+7. **Email Configuration:**
+   - Configure email settings for GLPI notifications:
+     - **SMTP server:** Enter the hostname or IP address of your SMTP server.
+     - **SMTP security:** Choose the appropriate security option for your SMTP server.
+     - **SMTP port:** Enter the port number used by your SMTP server (usually 25, 465, or 587).
+     - **SMTP username and password:** If required by your SMTP server.
+   - Click "Next" to continue.
+
+8. **Session Configuration:**
+   - Configure session settings for user sessions:
+     - **Session duration:** Set the duration for user sessions in minutes.
+     - **Session timeout:** Set the timeout for inactive sessions in minutes.
+   - Click "Next" to proceed.
+
+9. **Install and Initialize:**
+   - GLPI will now install and initialize. This involves creating database tables, configuring defaults, and preparing the system.
+
+10. **Installation Complete:**
+    - Once the installation is complete, you'll see a confirmation message.
+    - This message provides a link to log in to GLPI using the administrator account you created.
+
+11. **First Login:**
+    - Click the provided link to log in using the administrator credentials.
+    - You'll gain access to the GLPI dashboard and administrative features.
+
+12. **Post-Installation Tasks:**
+    - Customize GLPI to suit your organization's needs by configuring asset categories, users, groups, email notifications, and more.
+
+Remember to regularly update GLPI to benefit from new features and security enhancements. You can configure update notifications within the GLPI interface.
+
+For further details, refer to the official GLPI documentation or your original guide source.
+
